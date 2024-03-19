@@ -9,6 +9,7 @@ import {
 } from "@/utils/motion";
 import { SparklesIcon } from "@heroicons/react/24/solid";
 import Image from "next/image";
+import TextEffect from "./TextEffect";
 
 const HeroContent = () => {
   return (
@@ -22,16 +23,16 @@ const HeroContent = () => {
             className='Welcome-box py-[8px] px-[4px] border border-[#7042f88b] opacity-[0.9]'>
 
                 <SparklesIcon className='text-[#b49bff] mr-[10px] h-5 w-5'/>
-                <h1 className='Welcome-text text-[13px]'>Portifólio Desenvolvedor Fullstack</h1>
+                <h1 className='Welcome-text text-[13px]'>Brayham Carvalho - Desenvolvedor Fullstack</h1>
             </motion.div>
             <motion.div
             variants={slideInFromLeft(0.5)}
             className="flex flex-col gap-6 text-6xl font-bold text-white max-w-[600px] w-auto h-auto"
             >
                 <span>
-                Fornecendo as
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500"> melhores soluções </span>
-                para você
+                Fornecendo a melhor
+                <span>  <TextEffect/>  </span>
+                <br></br>para você 
                 </span>
             </motion.div>
             <motion.p
